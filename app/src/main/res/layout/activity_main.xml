@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#F5F5F5"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:paddingHorizontal="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/appname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculadora"
+                android:fontFamily="sans-serif-black"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:textColor="#333333"
+                android:layout_marginTop="40sp"
+                android:layout_marginBottom="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/br"
+                android:layout_width="match_parent"
+                android:layout_height="3sp"
+                android:background="#DDDDDD"
+                android:layout_marginTop="5sp"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+                <EditText
+                    android:id="@+id/edt_num1"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:inputType="number"
+                    android:hint="0"
+                    android:background="@drawable/edittext_rounded"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#212121"
+                    android:textColorHint="#757575"
+                    android:padding="16dp"
+                    android:layout_marginTop="20dp"/>
+
+                <Spinner
+                    android:id="@+id/spinner_operations"
+                    android:layout_width="150dp"
+                    android:layout_height="60dp"
+                    android:textSize="80sp"
+                    android:spinnerMode="dropdown"
+                    android:fontFamily="sans-serif-black"
+                    android:background="@drawable/spinner_rounded"
+                    android:padding="12dp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"/>
+
+                <EditText
+                    android:id="@+id/edt_num2"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:inputType="number"
+                    android:hint="0"
+                    android:textSize="30sp"
+                    android:gravity="center"
+                    android:background="@drawable/edittext_rounded"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#212121"
+                    android:textColorHint="#757575"
+                    android:padding="16dp"
+                    android:layout_marginTop="20dp"/>
+
+                <Button
+                    android:id="@+id/btn_calc"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_marginTop="20dp"
+                    android:backgroundTint="#007AFF"
+                    android:text="="
+                    android:textSize="30sp"
+                    android:textColor="@color/white"
+                    />
+
+                <TextView
+                    android:id="@+id/txt_result"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="0.0"
+                    android:textColor="#333333"
+                    android:textSize="30sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif-black"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
